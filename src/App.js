@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Post from './post';
 
 function App() {
   return (
@@ -10,10 +11,11 @@ function App() {
         <img
           className="app__headerImage"
           src=""
-          alt=""
+          alt="Logo"
         />
       </div>
       <h1>Hello devs !</h1>
+      <Post/>
     </div>
   );
 }
