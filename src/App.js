@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Post from './post';
 
 function App() {
+
+
+  const [posts, setPosts] = useState([
+    {
+      username: 'Muli',
+      caption: 'WUlan',
+      imgUrl: 'f'
+    }
+    ,
+
+    {
+      username: 'Muli',
+      caption: 'WUlan',
+      imgUrl: 'f'
+    }
+
+  ])
   return (
     <div className="app">
 
@@ -15,11 +32,9 @@ function App() {
         />
       </div>
       <h1>Hello devs !</h1>
-      <Post username="MUli" caption="Yes saya" imgUrl="brrr" />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+
+      {posts.map(element => <Post username={element.username} caption={element.caption} imgUrl={element.imgUrl} />)}
+
     </div>
   );
 }
