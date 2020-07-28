@@ -16,6 +16,10 @@ function App() {
       </div>
       <h1>Hello devs !</h1>
       <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   );
 }
