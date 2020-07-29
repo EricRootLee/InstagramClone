@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Post from './post';
 
 function App() {
-
-
   const [posts, setPosts] = useState([
     {
       username: 'Muli',
@@ -18,12 +16,13 @@ function App() {
       caption: 'WUlan',
       imgUrl: 'f'
     }
-
   ])
+
+useEffect(()=>{
+
+},[])
   return (
     <div className="app">
-
-
       <div className="app__header">
         <img
           className="app__headerImage"
